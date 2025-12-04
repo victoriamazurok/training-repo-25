@@ -5,11 +5,10 @@ import java.net.URL;
 
 
 public class GitHubUserStatistics {
-    public final static String USER_NAME;
-
+    public final static String USER_NAME = "victoriamazurok";
 
     public static void main(String[] args) {
-        String apiUrl = "https://api.github.com/users/";
+        String apiUrl = "https://api.github.com/users/" + USER_NAME;
         try {
             @SuppressWarnings("deprecation")
             URL url = new URL(apiUrl);
